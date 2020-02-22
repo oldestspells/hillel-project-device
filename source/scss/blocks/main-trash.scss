@@ -1,0 +1,40 @@
+//.popup-back{
+//  width:100%;
+//  min-height:100%;
+//  background-color: rgba(0,0,0,0.5);
+//  //overflow:hidden;
+//  //position:fixed;
+//  z-index: 9;
+//  top: 0px;
+//  left: 0px;
+//}
+
+
+.modal_container{
+  top: 200px;
+  position: relative;
+  align-self: center;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0px auto;
+  width: 1120px;
+  display: flex;
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  animation-duration: 0.6s;
+  .finalPrice-container{
+    width: 1160px;
+    justify-content: space-between;
+  }
+
+  #make-order{
+    margin-right: 20px;
+  }
+}
+

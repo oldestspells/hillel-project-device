@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Device — интернет-магазин гаджетов</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page">
+<header class="page__header page-header page__wrapper">
+
+</header>
+
+<main class="page__main">
+</main>
+
+<footer class="page__footer page-footer">
+
+</footer>
+
+<section class="write-us modal modal--write-us">
+  <h2 class="visually-hidden">Напишите нам</h2>
+  <form class="write-us__form">
+    <p class="write-us__field">
+      <label class="write-us__label" for="writeUsName">Ваше имя:</label>
+      <input class="write-us__input" id="writeUsName" type="text" name="writeUsName" placeholder="Имя Фамилия">
+    </p>
+    <p class="write-us__field">
+      <label class="write-us__label" for="writeUsEmail">Ваш e-mail:</label>
+      <input class="write-us__input" id="writeUsEmail" type="email" name="writeUsEmail" placeholder="email@example.com">
+    </p>
+    <p class="write-us__field write-us__field--message">
+      <label class="write-us__label" for="contactMessage">Текст письма:</label>
+      <textarea class="write-us__textarea" id="contactMessage" cols="78" rows="4" name="contactMessage" placeholder="В свободной форме"></textarea>
+    </p>
+    <button class="write-us__btn btn" type="button">Отправить</button>
+  </form>
+  <button class="modal__close" type="button">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+</section>
+
+<section class="review-modal modal modal--review">
+  <h2 class="visually-hidden"> Оставить отзыв</h2>
+  <form class="review-modal__form">
+    <p class="review-modal__field">
+      <label class="review-modal__label" for="reviewName">Ваше имя:</label>
+      <input class="review-modal__input" id="reviewName" type="text" name="reviewName" placeholder="Ваше имя">
+    </p>
+    <p class="review-modal__field review-modal__field--message">
+      <label class="review-modal__label" for="reviewMessage">Ваш отзыв:</label>
+      <textarea class="review-modal__textarea" id="reviewMessage" cols="78" rows="4" name="reviewMessage" placeholder="Поделитесь впечатлениями о товаре"></textarea>
+    </p>
+    <button class="review-modal__btn btn" type="button">Отправить</button>
+  </form>
+  <button class="modal__close" type="button">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+</section>
+
+<section class="map modal modal--map hide">
+  <h2 class="visually-hidden">Как нас найти</h2>
+  <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779985!2d37.5274293162675!3d55.6870309805358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa+Stroiteley%2C+15%2C+Moskva%2C+119311!5e0!3m2!1sen!2sru!4v1536378753041" width="960" height="559" allowfullscreen></iframe>
+  <img class="map__image" src="img/map-big.jpg" width="960" height="559" alt="Наш офис по адресу: город Москва, улица Строителей, дом 15">
+  <button class="modal__close" type="button">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+</section>
+
+<section class="success-message modal modal--success">
+  <b class="success-message-lead"></b>
+  <p class="success-message-text"></p>
+  <button class="modal__close success-message-close" type="button">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+</section>
+
+<section class="cart-popup modal">
+  <h2 class="cart-popup__title visually-hidden">Корзина</h2>
+  <ul>
+
+  </ul>
+  <div class="finalPrice-container">
+    <div>
+      <span>Всего:</span>
+      <span class="finalPrice"></span>
+    </div>
+    <a class="btn cart__btn" href="/#/order">Оформление заказа</a>
+  </div>
+  <button class="cart__close modal__close" type="button">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+</section>
+
+
+<script src="js/app.js"></script>
+</body>
+</html>

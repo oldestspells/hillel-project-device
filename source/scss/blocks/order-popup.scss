@@ -1,0 +1,139 @@
+.order-popup-container {
+  //position: relative;
+  //top: 10%;
+  //left: 50%;
+  margin: 0 auto;
+  width: 1160px;
+  //height: auto;
+  box-sizing: border-box;
+  padding: 75px 100px;
+  box-shadow: none;
+  //box-shadow: 0px 0px 22px -1px rgba(0, 0, 0, 0.75);
+  background-color: #fff;
+  //z-index: 100;
+  display: flex;
+  flex-direction: column;
+  .products-list-in-cart{
+    z-index: 1;
+    poosition: center;
+    animation: none;
+    .cart__product{
+      opacity: 1;
+      z-index: 1;
+      animation: none;
+    }
+    .cart__product-price::after {
+      content: "$";
+    }
+    li{
+      list-style: none;
+    }
+    .product-mini{
+      display: flex;
+    }
+    .delete_item{
+      margin-top: 20px;
+    }
+    .delete_item:hover{
+      color: red;
+    }
+  }
+
+  h3 {
+    font-size: 35px;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+
+  .order-form {
+    display: flex;
+    justify-content: space-between;
+  }
+  .input-text-wraper {
+    display: flex;
+    flex-direction: column;
+
+    .popup-label{
+      width: 240px;
+      line-height: 24px;
+      font-family: 'Gilroy',sans-serif;
+      font-size: 20px;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+
+    .alert{
+      border: 1px solid red;
+    }
+    input, select {
+      margin-bottom: 10px;
+      width: 290px;
+      background: #f2f2f2;
+      border: 2px solid transparent;
+      outline: none;
+      font-size: 20px;
+      line-height: 24px;
+      padding: 15px;
+      border-radius: 4px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      //padding: 4px;
+      margin-top: 15px;
+    }
+  }
+}
+
+.order-popup-container .finalPrice-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.confirm-order-btn {
+  margin-left: auto;
+}
+
+.success-order-message{
+  border-radius: 25px;
+  border: 10px solid green;
+  height: 50%;
+  .success-used-data{
+    display: flex;
+
+    flex-direction: column;
+    img{
+      align-self: center;
+    }
+    h3{
+      align-self: center;
+      font-size: 30px;
+    }
+    p{
+      font-size: 20px;
+      align-self: center;
+    }
+    .to-main-page{
+      text-decoration: none;
+      font-size: 20px;
+      padding: 20px 0px;
+    }
+    #user-complete-order{
+      .cart__product{
+        opacity: 1;
+      }
+  }
+}
+
+
+  .hide{
+    display: none;
+  }
+}
+
+.delete_item {
+  cursor: pointer;
+}
+
+.user-complete-order .card__product {
+  display: none !important;
+}
